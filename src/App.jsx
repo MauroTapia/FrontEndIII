@@ -8,13 +8,16 @@ function App() {
 
   return (
     <>
-    {toggle ? 
-      <ClassComponent/>
-      :
-      <FuncComponent/>
-      }
-    <button onClick={() => setToggle(!toggle)}>Cambiar a componente de {toggle ?  'función' : 'clase'}</button>
+      <FuncComponent />
     </>
+    // <>
+    // {toggle ? 
+    //   <ClassComponent/>
+    //   :
+    //   <FuncComponent/>
+    //   }
+    // <button onClick={() => setToggle(!toggle)}>Cambiar a componente de {toggle ?  'función' : 'clase'}</button>
+    // </>
   )
 }
 
