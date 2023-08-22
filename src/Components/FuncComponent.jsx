@@ -11,7 +11,7 @@ const FuncComponent = () => {
         return () => {
             console.log('Se desmontó el componente de función')
         }
-    }, [])
+    }, [loading])
     
     // useEffect(() => {
     //     console.log('Se actualizó el estado name y/o count')
