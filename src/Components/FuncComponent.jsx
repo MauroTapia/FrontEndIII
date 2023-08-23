@@ -11,7 +11,7 @@ const FuncComponent = () => {
         return () => {
             console.log('Se desmontó el componente de función')
         }
-    }, [loading])
+    }, [])
     
     // useEffect(() => {
     //     console.log('Se actualizó el estado name y/o count')
@@ -33,7 +33,7 @@ const FuncComponent = () => {
         <>
             <h2>Pizzas</h2>
         </>}
-        <button onClick={() => setLoading(true)}>Cancelar pedido</button>
+        <button onClick={() => setLoading(!loading)}>Cancelar pedido</button>
         {/* {loading ? 'Loading...' : 
         <>
             {console.log('Se ejecutó el render')}

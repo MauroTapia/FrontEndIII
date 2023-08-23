@@ -2,14 +2,19 @@ import { useState } from 'react'
 import './App.css'
 import ClassComponent from './Components/ClassComponent'
 import FuncComponent from './Components/FuncComponent'
+import PokeApi from './Components/PokeApi'
 
 function App() {
   const [toggle, setToggle] = useState(false)
 
   return (
     <>
-      <FuncComponent />
+      <PokeApi />
     </>
+    // <>
+    // <button onClick={() => setToggle(!toggle)}>Show/Hide</button>
+    //    { toggle && < FuncComponent /> }
+    // </>
     // <>
     // {toggle ? 
     //   <ClassComponent/>
